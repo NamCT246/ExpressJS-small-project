@@ -1,0 +1,22 @@
+{
+  "name": "test-sorceries",
+  "version": "1.0.0",
+  "description": "StudentManagement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamCt1191995/test-sorceries.git"
+  },
+  "author": "NamCt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamCt1191995/test-sorceries/issues"
+  },
+  "homepage": "https://github.com/NamCt1191995/test-sorceries#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
