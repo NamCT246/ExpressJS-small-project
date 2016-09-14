@@ -1,13 +1,16 @@
 var express = require('express');
-
+var bodyParser = require('body-parser');
+var students = require('./routes/Students.js');
+var teacher =  require('./routes/teacher.js');
 var app = express();
-
+app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 80));
 
-app.get('/', function(req, res) {
+app.use('/', students);
+app.use('/', teacher);
 
-res.send("Hello world");
-
+app.get('/', function(req, res){
+	res.send("hello world");
 });
 
 app.listen(app.get('port'), function() {
